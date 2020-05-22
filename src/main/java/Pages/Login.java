@@ -1,27 +1,46 @@
 package Pages;
 
-import org.openqa.selenium.By;
+import PageFactory.DriverPageFactory;
+import Test.Properties;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import report.Report;
 
-public class Login{
+import static Test.Properties.URL_BASE;
+import static org.junit.Assert.assertEquals;
 
-    @FindBy(id="email")
+public class Login extends DriverPageFactory implements Properties {
+
+    @FindBy(css="#email")
     private WebElement txtEmail;
 
-    @FindBy(id="senha")
+    @FindBy(css="#senha")
     private WebElement txtSenha;
 
-    @FindBy(css = "body > div.jumbotron.col-lg-4 > form > button")
+    @FindBy(css="button[type='submit']")
     private WebElement btnEntrar;
 
 
-    public void RealizarLogin(){
 
-        txtEmail.sendKeys("rafinha12!gft.com");
+    @FindBy(css="div.alert.alert-success")
+    private WebElement msgUsuarioInseridoComSucesso;
 
-        txtSenha.sendKeys("rafafa123");
+    public void acessaAplicacao() {
+        getDriver().get(URL_BASE);
+        Report.takeScreenshot();
+    }
 
+    public boolean validaCadastro(String valCadastro) {
+        String txtUsuarioInseridoComSucesso = msgUsuarioInseridoComSucesso.getText();
+        assertEquals(valCadastro, txtUsuarioInseridoComSucesso);
+        Report.takeScreenshot();
+        return true;
+    }
+
+    public void entra(String email, String senha) {
+        txtEmail.sendKeys(email);
+        txtSenha.sendKeys(senha);
+        Report.takeScreenshot();
         btnEntrar.click();
     }
 

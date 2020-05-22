@@ -23,9 +23,9 @@ public class Register extends BaseTest {
     }
 
     public void preencheFormulario(String nome, String email, String senha) {
-        txtNome.sendKeys(nome);
-        txtEmail.sendKeys(email);
-        txtSenha.sendKeys(senha);
+        txtNome.sendKeys("Rafael");
+        txtEmail.sendKeys("Rafa@fefernandes.com");
+        txtSenha.sendKeys("123456");
     }
 
     public void salvaCadastro() {

@@ -19,9 +19,13 @@ public class BaseTest implements Properties {
 
     @Before
     public void Init() {
+
         driverHome = DriverPageFactory.getManager(Drivers.CHROME);
+
         driver = driverHome.getDriver();
+
         driver.manage().timeouts().implicitlyWait(Properties.TIME_OUT, TimeUnit.SECONDS);
+
         driver.manage().window().maximize();
     }
 

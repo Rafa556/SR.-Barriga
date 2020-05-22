@@ -1,12 +1,12 @@
 
 package PageFactory;
 
-import java.sql.DriverManager;
-
-import static org.openqa.selenium.remote.BrowserType.CHROME;
+import lombok.Getter;
+import lombok.Setter;
 
     public class DriverPageFactory {
 
+        @Getter @Setter
     public static DriverHome getManager(Drivers type) {
 
         DriverHome driverHome;

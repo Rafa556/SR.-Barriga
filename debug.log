@@ -1,0 +1,3 @@
+[0520/082901.060:ERROR:file_io_win.cc(179)] CreateFile C:\Users\Rafa\AppData\Local\Temp\scoped_dir13368_353722609\Crashpad\settings.dat: O arquivo já está sendo usado por outro processo. (0x20)
+[0520/085309.175:ERROR:file_io_win.cc(179)] CreateFile C:\Users\Rafa\AppData\Local\Temp\scoped_dir15008_2121662825\Crashpad\settings.dat: O arquivo já está sendo usado por outro processo. (0x20)
+[0520/090341.477:ERROR:file_io_win.cc(179)] CreateFile C:\Users\Rafa\AppData\Local\Temp\scoped_dir14664_1133290485\Crashpad\settings.dat: O arquivo já está sendo usado por outro processo. (0x20)

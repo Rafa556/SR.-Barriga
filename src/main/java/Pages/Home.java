@@ -1,14 +1,26 @@
+
 package Pages;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import report.Report;
+
+import static org.junit.Assert.assertEquals;
 
 public class Home {
 
-    @FindBy(css = "a[href='/movimentacao']")
-    private WebElement abaCriarMovimentacao;
+    @FindBy(css="div.alert.alert-success")
+    private WebElement msgBemVindo;
 
-    public void home(){
-        abaCriarMovimentacao.click();
+    public boolean validaEntrada(String valEntrada) {
+
+        String txtBemVindo = msgBemVindo.getText();
+
+        assertEquals(valEntrada, txtBemVindo);
+
+        Report.takeScreenshot();
+
+        return true;
     }
+
 }
