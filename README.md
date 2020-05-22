@@ -26,7 +26,7 @@ Requisitos de software e hardware necessários para executar este projeto de aut
 • ChromeDriver 81.0.4044.69
 
 CLONE O PROJETO PARA SUA MÁQUINA LOCAL
-https://github.com/Rafa556/Sr-Barriga-2.git
+https://github.com/Rafa556/SR.-Barriga
 
 COMO EXECUTAR OS TESTES
 Utilize uma IDE de sua preferencia, recomendado: eclipse ou Intellij;
