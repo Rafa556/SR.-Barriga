@@ -1,15 +1,14 @@
 package Pages;
 
-import PageFactory.DriverPageFactory;
+import Driver.DriverManagerFactory;
 import Test.Properties;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import report.Report;
 
-import static Test.Properties.URL_BASE;
 import static org.junit.Assert.assertEquals;
 
-public class Login extends DriverPageFactory implements Properties {
+public class Login extends DriverManagerFactory implements Properties {
 
     @FindBy(css="#email")
     private WebElement txtEmail;

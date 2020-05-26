@@ -1,5 +1,5 @@
 
-package PageFactory;
+package Driver;
 
 public enum Drivers {
     CHROME

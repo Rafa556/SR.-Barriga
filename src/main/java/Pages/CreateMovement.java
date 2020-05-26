@@ -38,17 +38,17 @@ public class CreateMovement {
     @FindBy(css="a[href='/logout']")
     private WebElement lnkSair;
 
-    public CreateMovement(WebElement txtTipoDeMovimentacao, WebElement txtDataDaMovimentação, WebElement txtDataPagamento,
-                          WebElement txtInteressado, WebElement selectConta, WebElement rdoPago, WebElement btnSalvar, WebElement lnkSair) {
-        this.txtTipoDeMovimentacao = txtTipoDeMovimentacao;
-        this.txtDataDaMovimentação = txtDataDaMovimentação;
-        this.txtDataPagamento = txtDataPagamento;
-        this.txtInteressado = txtInteressado;
-        this.selectConta = selectConta;
-        this.rdoPago = rdoPago;
-        this.btnSalvar = btnSalvar;
-        this.lnkSair = lnkSair;
-    }
+//    public CreateMovement(WebElement txtTipoDeMovimentacao, WebElement txtDataDaMovimentação, WebElement txtDataPagamento,
+//                          WebElement txtInteressado, WebElement selectConta, WebElement rdoPago, WebElement btnSalvar, WebElement lnkSair) {
+//        this.txtTipoDeMovimentacao = txtTipoDeMovimentacao;
+//        this.txtDataDaMovimentação = txtDataDaMovimentação;
+//        this.txtDataPagamento = txtDataPagamento;
+//        this.txtInteressado = txtInteressado;
+//        this.selectConta = selectConta;
+//        this.rdoPago = rdoPago;
+//        this.btnSalvar = btnSalvar;
+//        this.lnkSair = lnkSair;
+//    }
 
 
     public void preencheFormulario(String tipoMovimentacao, String dataMovimentacao, String dataPagamento,

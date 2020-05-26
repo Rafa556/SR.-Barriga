@@ -1,4 +1,5 @@
 package steps;
+import Driver.DriverManagerFactory;
 import com.github.javafaker.Faker;
 import cucumber.api.java.pt.Dado;
 import cucumber.api.java.pt.Entao;
@@ -10,7 +11,7 @@ import java.util.Locale;
 
 import static java.sql.DriverManager.getDriver;
 import static org.junit.Assert.assertTrue;
-public class StepsMov extends DriverPageFactory {
+public class StepsMov extends DriverManagerFactory {
     private Home home = PageFactory.initElements(getDriver(), Home.class);
     private NavBar navBar = PageFactory.initElements(getDriver(), NavBar.class);
     private Accounts contas = PageFactory.initElements(getDriver(), Accounts.class);

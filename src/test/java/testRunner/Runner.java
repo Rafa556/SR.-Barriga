@@ -5,7 +5,7 @@ import org.junit.runner.RunWith;
 @RunWith(Cucumber.class)
 @CucumberOptions(
         tags = {},
-        glue = {"hooks", "steps"},
+        glue = {"Hooks", "steps"},
         plugin = {"pretty","json:target/json-cucumber-reports/cucumber.json",
                 "junit:target/xml-junit/junit.xml",
                 "io.qameta.allure.cucumber3jvm.AllureCucumber3Jvm"},

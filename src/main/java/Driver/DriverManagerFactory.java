@@ -1,10 +1,10 @@
 
-package PageFactory;
+package Driver;
 
 import lombok.Getter;
 import lombok.Setter;
 
-    public class DriverPageFactory {
+    public class DriverManagerFactory {
 
         @Getter @Setter
     public static DriverHome getManager(Drivers type) {

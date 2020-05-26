@@ -1,10 +1,10 @@
-SISTEMA – AUTOMATION PRACTICE III SR BARRIGA
+<h1>SISTEMA – AUTOMATION PRACTICE III SR BARRIGA</h1>
 Projeto desenvolvido para avaliação.
 
-TESTE
-• Movimentação CT001 - AP - Cadastrar movimentação com sucesso
+<h1>TESTE</h1>
+• Movimentação - Cadastrar movimentação com sucesso
 
-PRÉ-REQUESITOS
+<h1>PRÉ-REQUESITOS</h1>
 Requisitos de software e hardware necessários para executar este projeto de automação:
 
 • Java 1.8 SDK
@@ -25,10 +25,10 @@ Requisitos de software e hardware necessários para executar este projeto de aut
 
 • ChromeDriver 81.0.4044.69
 
-CLONE O PROJETO PARA SUA MÁQUINA LOCAL
+<h1>CLONE O PROJETO PARA SUA MÁQUINA LOCAL</h1>
 https://github.com/Rafa556/SR.-Barriga
 
-COMO EXECUTAR OS TESTES
+<h1>COMO EXECUTAR OS TESTES</h1>
 Utilize uma IDE de sua preferencia, recomendado: eclipse ou Intellij;
 
 Abra o projeto na IDE;

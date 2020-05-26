@@ -1,11 +1,10 @@
 
 package Pages;
 
-import Test.BaseTest;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class Register extends BaseTest {
+public class Register {
 
     @FindBy(css="a[href='/cadastro']")
     private WebElement lnkNovoUsuario;

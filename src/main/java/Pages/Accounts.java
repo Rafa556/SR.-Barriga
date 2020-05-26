@@ -1,12 +1,12 @@
 package Pages;
 
-import Test.BaseTest;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import report.Report;
 
 import static org.junit.Assert.assertEquals;
 
-public class Accounts extends BaseTest {
+public class Accounts  {
 
     @FindBy(css="#nome")
     private WebElement txtNome;
@@ -31,4 +31,5 @@ public class Accounts extends BaseTest {
         assertEquals(valConta, txtContaAdicionadaComSucesso);
         return true;
     }
+
 }
